@@ -33,8 +33,7 @@ public class LoginActivity extends AppCompatActivity {
     }
 
     private void findViews(){
-        edtEmail = findViewById(R.id.edtEmail);
-        editPassword =findViewById(R.id.editPassword);
+
         chkRememberMe = findViewById(R.id.chkRememberMe);
         btnLogin = findViewById(R.id.btnLogin);
         txtForgotPassword = findViewById(R.id.txtForgotPassword);
