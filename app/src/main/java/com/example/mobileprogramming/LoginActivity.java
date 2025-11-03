@@ -44,6 +44,10 @@ public class LoginActivity extends AppCompatActivity {
                 String email = edtEmail.getText().toString().trim();
                 String password = editPassword.getText().toString().trim();
 
+                if(email.isEmpty()){
+                    Toast.makeText(LoginActivity.this, "Email cannot be empty", Toast.LENGTH_SHORT).show();
+                }else if(password.isEmpty()) {
+                    Toast.makeText(LoginActivity.this, "Password cannot be empty", Toast.LENGTH_SHORT).show();
 
                 }else if (email.equals("bishal@gmail.com") && password.equals("bishal123")){
                     Toast.makeText(LoginActivity.this, "login Successful", Toast.LENGTH_SHORT).show();
