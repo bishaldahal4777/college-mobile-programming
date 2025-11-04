@@ -30,6 +30,7 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
+        findViews();
 
     }
 
@@ -49,9 +50,6 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
     @Override
     public void onClick(View view) {
         if (view.getId() == R.id.btnLogin) {
-            Intent intent = new Intent(LoginActivity.this, ActivitySignup.class);
-            intent.putExtra("Email", "bishal@gmail.com");
-            startActivity(intent);
 
             String email = edtEmail.getText().toString().trim();
             String password = editPassword.getText().toString().trim();
@@ -68,6 +66,9 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
             }
 
         } else if (view.getId() == R.id.txtSignup) {
+            Intent intent = new Intent(LoginActivity.this, ActivitySignup.class);
+            intent.putExtra("Email", "bishal@gmail.com");
+            startActivity(intent);
 
         }
     }
