@@ -41,7 +41,6 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
         txtsignup = findViewById(R.id.txtSignup);
         txtsignup.setOnClickListener(this);
         btnLogin.setOnClickListener(this);
-        btnLogin.setOnClickListener(new View.OnClickListener() {
 
         });
 
@@ -50,6 +49,7 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
     @Override
     public void onClick(View view) {
         if(view.getId()==R.id.btnLogin){
+            btnLogin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 String email = edtEmail.getText().toString().trim();
