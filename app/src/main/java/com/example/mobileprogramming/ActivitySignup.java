@@ -1,6 +1,7 @@
 package com.example.mobileprogramming;
 
 import android.os.Bundle;
+import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -14,6 +15,9 @@ public class ActivitySignup extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_signup);
+        String email= getIntent().getStringExtra("Email");
+        Toast.makeText(this, "Email: "+email, Toast.LENGTH_SHORT).show();
+
 
     }
 }

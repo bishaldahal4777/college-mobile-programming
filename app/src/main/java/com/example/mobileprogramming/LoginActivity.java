@@ -69,6 +69,7 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
             Intent intent = new Intent(LoginActivity.this, ActivitySignup.class);
             intent.putExtra("Email", "bishal@gmail.com");
             startActivity(intent);
+            finish();
 
         }
     }
