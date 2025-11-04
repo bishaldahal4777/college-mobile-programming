@@ -39,8 +39,17 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
         btnLogin = findViewById(R.id.btnLogin);
         txtForgotPassword = findViewById(R.id.txtForgotPassword);
         txtsignup = findViewById(R.id.txtSignup);
-        txtsignup
+        txtsignup.setOnClickListener(this);
+        btnLogin.setOnClickListener(this);
         btnLogin.setOnClickListener(new View.OnClickListener() {
+
+        });
+
+    }
+
+    @Override
+    public void onClick(View view) {
+        if(view.getId()==R.id.btnLogin){
             @Override
             public void onClick(View view) {
                 String email = edtEmail.getText().toString().trim();
@@ -57,12 +66,6 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
                     Toast.makeText(LoginActivity.this, "login Credential cannot match", Toast.LENGTH_SHORT).show();
                 }
             }
-        });
-
-    }
-
-    @Override
-    public void onClick(View view) {
-
+        }
     }
 }
