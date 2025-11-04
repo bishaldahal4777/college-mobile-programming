@@ -50,7 +50,8 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
     public void onClick(View view) {
         if (view.getId() == R.id.btnLogin) {
             Intent intent = new Intent(LoginActivity.this, ActivitySignup.class);
-            intent.pu
+            intent.putExtra("Email", "bishal@gmail.com");
+            startActivity(intent);
 
             String email = edtEmail.getText().toString().trim();
             String password = editPassword.getText().toString().trim();
