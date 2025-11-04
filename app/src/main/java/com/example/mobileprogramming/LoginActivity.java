@@ -14,7 +14,7 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
-public class LoginActivity extends AppCompatActivity {
+public class LoginActivity extends AppCompatActivity implements View.OnClickListener{
 
     private EditText edtEmail, editPassword;
 
@@ -39,6 +39,7 @@ public class LoginActivity extends AppCompatActivity {
         btnLogin = findViewById(R.id.btnLogin);
         txtForgotPassword = findViewById(R.id.txtForgotPassword);
         txtsignup = findViewById(R.id.txtSignup);
+        txtsignup
         btnLogin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -57,6 +58,11 @@ public class LoginActivity extends AppCompatActivity {
                 }
             }
         });
+
+    }
+
+    @Override
+    public void onClick(View view) {
 
     }
 }
