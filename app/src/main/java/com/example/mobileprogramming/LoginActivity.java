@@ -22,7 +22,7 @@ public class LoginActivity extends AppCompatActivity {
 
     private AppCompatButton btnLogin;
 
-    private TextView txtForgotPassword;
+    private TextView txtForgotPassword, txtsignup;
 
 
     @Override
@@ -38,6 +38,7 @@ public class LoginActivity extends AppCompatActivity {
         chkRememberMe = findViewById(R.id.chkRememberMe);
         btnLogin = findViewById(R.id.btnLogin);
         txtForgotPassword = findViewById(R.id.txtForgotPassword);
+        txtsignup = findViewById(R.id.txtSignup);
         btnLogin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
