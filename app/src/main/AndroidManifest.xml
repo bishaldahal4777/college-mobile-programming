@@ -17,6 +17,7 @@
         <activity
             android:name=".ActivitySignup"
             android:exported="false" /> <!-- Make LoginActivity the launcher (first screen) -->
+
         <activity
             android:name=".LoginActivity"
             android:exported="true">

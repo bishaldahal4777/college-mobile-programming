@@ -72,5 +72,12 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
             finish();
 
         }
+        else if (view.getId() == R.id.txtForgotPassword) {
+            Intent intent = new Intent(LoginActivity.this, ForgotPasswordActivity.class);
+
+            startActivity(intent);
+            finish();
+
+        }
     }
 }
