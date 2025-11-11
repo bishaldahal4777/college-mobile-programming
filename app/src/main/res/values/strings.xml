@@ -6,4 +6,8 @@
         <item>Others</item>
     </string-array>
 
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+    <string name="others">Others</string>
+
 </resources>
