@@ -23,7 +23,7 @@ public class OtpActivity extends AppCompatActivity {
         otp3 = findViewById(R.id.otp3);
         otp4 = findViewById(R.id.otp4);
         btnVerifyOtp = findViewById(R.id.btnVerifyOtp);
-        txtResendOtp = findViewById(R.id.txtResendOtp);
+
 
         btnVerifyOtp.setOnClickListener(v -> {
             String code = otp1.getText().toString().trim() +

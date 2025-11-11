@@ -8,11 +8,6 @@
     android:padding="24dp"
     android:background="#F8F8F8"
     tools:context=".LoginActivity">
-
-    <!-- Title -->
-
-    <!-- Email Input -->
-
     <TextView
         android:id="@+id/txtTitle"
         android:layout_width="wrap_content"
